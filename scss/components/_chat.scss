@@ -1,0 +1,65 @@
+/*
+	The chat bubble/comments
+*/
+.comments {
+	width:300px;
+}
+
+.comments .comment {
+	width:100%;
+	margin-bottom:20px;
+}
+
+.comments .comment p {
+	margin:0 0 10px 0;
+}
+
+/* general button bubble */
+.bubble {
+	position:relative;
+	background:$my-bubble;
+	padding: 1px 20px 10px;
+	color:#fff;
+	border-radius:1px;
+	margin-left:20px;
+}
+
+.bubble:after{
+	content: '';
+	display:block;
+	position:absolute;
+	
+	width:0;
+	height:0;
+		
+	border-top:8px solid transparent;
+	border-bottom:8px solid transparent;	
+}
+
+.bubble .title {
+	border-bottom:1px solid #fff;
+	font-size:12px;
+	font-weight:100;
+}
+
+.bubble .time {
+	font-size:11px;
+}
+
+/* opposite bubble */
+.bubble.opposite {
+	background:$opposite-bubble;
+}
+
+.bubble.opposite:after {
+	top:15px;
+	right:-15px;
+	border-left:15px solid $opposite-bubble;
+}
+
+/* Your bubble */
+.bubble.me:after{
+	left:-15px;
+	top:15px;
+	border-right:15px solid $my-bubble;
+}
