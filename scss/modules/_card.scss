@@ -1,14 +1,114 @@
 /* Card UI */
-.card {
-	width: 300px; 
-	box-shadow: 0px 0px 2px #252525; 
-	padding: 5px; 
-	min-height: 400px; 
-	border-radius: 2px;
+
+.cards {
+    width: 800px;
+    margin: 0 auto;
 }
+
+.cardwrapper{
+    width: 45%;
+}
+
+.cardwrapper.left{
+    float:left;
+}
+
+.cardwrapper.right{
+    
+    float:left;
+}
+
+
+
+/*
+    The actual cards themself
+*/
+.card {
+        margin: 10px;
+	box-shadow: 0px 0px 2px #252525; 
+	padding: 2.5%; 
+	min-height: 200px; 
+	border-radius: 2px;
+        margin-bottom: 5%;
+}
+
 .card h2 {
-	padding: 10px; 
+	padding: 10px 10px 0px; 
 	font-weight: 300; 
 	margin-bottom: 20px;
 }
-.card .content {}
+
+.card p {
+    padding:0 0 0 10px;
+}
+
+
+/*
+    Some card components
+*/
+
+
+.card .list {
+    list-style-type: none;
+    padding:10px;
+    font-size: 13px;
+}
+
+.card .list li {
+    border-top: 1px solid $general-color;
+    color: $general-color;
+    padding:10px 0 5px;
+}
+
+.card .list li .title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card .list li p{
+    padding:0;
+}
+
+.card .list li img{
+    float:left;
+    height: 100%;
+}
+
+/* Card additionals */
+
+.card .big-info {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.card .small-info {
+    display: block;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+
+
+/*
+
+    Responsive section
+
+*/
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .cards {width: 100%;}
+    .cardwrapper {width: 100%;}
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+
