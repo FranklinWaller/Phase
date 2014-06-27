@@ -1,6 +1,4 @@
-@import '_config.scss';
-@import '_standard.scss';
-@import '_addons.scss';
-@import 'components/_card.scss';
-@import 'components/_chat.scss';
-
+@import "helpers/_all.scss";
+@import "lib/_all.scss";
+@import "base/_all.scss";
+@import "modules/_all.scss";
