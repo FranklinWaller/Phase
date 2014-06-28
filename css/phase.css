@@ -1,4 +1,5 @@
 /* Chat bubble */
+/* Side menu */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -2089,7 +2090,12 @@ th {
     clear: both;
     width: 100%; } }
 * {
-  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
 
 .skinny {
   font-weight: 100; }
@@ -2194,7 +2200,7 @@ th {
   margin-bottom: 20px; }
 
 .comments .comment p {
-  margin: 0 0 10px 0; }
+  margin: 10px 0 10px 0; }
 
 /* general button bubble */
 .bubble {
@@ -2217,7 +2223,8 @@ th {
 .bubble .title {
   border-bottom: 1px solid #fff;
   font-size: 12px;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-top: 10px; }
 
 .bubble .time {
   font-size: 11px; }
@@ -2236,5 +2243,36 @@ th {
   left: -15px;
   top: 15px;
   border-right: 15px solid #6bd88e; }
+
+.sidemenu {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: lightblue;
+  height: 100%;
+  max-height: 100%;
+  float: left; }
+
+.sidemenu .title {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px; }
+
+.sidemenu ul {
+  color: #252525;
+  list-style-type: none; 
+  overflow: hidden;
+}
+
+.sidemenu ul li {
+  background-color: wheat;
+  padding: 10px;
+  border-bottom: 1px solid white; }
+
+/* Side menu content */
+.side-content {
+  width: 75%;
+  float: left; }
 
 /*# sourceMappingURL=phase.css.map */
