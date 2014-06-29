@@ -2092,7 +2092,8 @@ th {
 * {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #252525; }
 
 html, body {
   height: 100%; }
@@ -2248,31 +2249,70 @@ html, body {
   margin: 0;
   padding: 0;
   width: 25%;
-  background-color: lightblue;
+  background-color: #f7f5f5;
   height: 100%;
   max-height: 100%;
-  float: left; }
+  float: left;
+  border-right: 1px solid lightgray;
+  overflow: auto; }
 
 .sidemenu .title {
   text-align: center;
   display: block;
   margin-bottom: 10px;
-  font-size: 22px; }
+  font-size: 22px;
+  background-color: #f7f5f5;
+  padding: 18px 9px 0px;
+  font-weight: 200; }
+
+.sidemenu .sub-title {
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 11px; }
 
 .sidemenu ul {
   color: #252525;
-  list-style-type: none; 
-  overflow: hidden;
-}
+  list-style-type: none; }
 
 .sidemenu ul li {
-  background-color: wheat;
+  background-color: white;
   padding: 10px;
-  border-bottom: 1px solid white; }
+  border-top: 1px solid lightgray; }
 
 /* Side menu content */
 .side-content {
-  width: 75%;
-  float: left; }
+  width: 74%;
+  float: left;
+  overflow: auto;
+  height: 100%; }
+
+.side-content .title {
+  margin: 10px;
+  padding-bottom: 5px;
+  font-weight: 200;
+  border-bottom: 1px solid #756c6c; }
+
+.sidemenu-open {
+  float: left;
+  margin: 10px 10px 0px 10px;
+  display: none; }
+
+/*
+
+    Responsive section
+
+*/
+@media only screen and (max-width: 768px) {
+  .sidemenu {
+    display: none;
+    position: absolute;
+    width: 50%; }
+
+  .side-content {
+    width: 100%; }
+
+  .sidemenu-open {
+    display: block; } }
 
 /*# sourceMappingURL=phase.css.map */
