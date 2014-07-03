@@ -5,6 +5,21 @@
 	width:300px;
 }
 
+.comment.left img{
+	float:left;
+
+}
+
+.comment.right img{
+	float:right;
+	margin-right:-220px;
+}
+
+.comment img{
+	max-width:65px;
+	border-radius:50%;
+}
+
 .comments .comment {
 	width:100%;
 	margin-bottom:20px;
@@ -21,7 +36,7 @@
 	padding: 1px 20px 10px;
 	color:#fff;
 	border-radius:1px;
-	margin-left:20px;
+	margin-left:90px;
 }
 
 .bubble:after{
