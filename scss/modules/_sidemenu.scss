@@ -54,6 +54,11 @@
     vertical-align: middle;
 }
 
+.sidemenu-open {
+    float:left;
+    margin: 10px 10px 0px 10px;
+    display:none;
+}
 
 /* Side menu content */
 
@@ -78,11 +83,7 @@
     padding: 5px 25px;
 }
 
-.sidemenu-open {
-    float:left;
-    margin: 10px 10px 0px 10px;
-    display:none;
-}
+
 
 /*
 
@@ -102,8 +103,7 @@
     }
     
     .side-content {
-        width: 97%;
-        
+        width: 97%;     
     }
     
     .sidemenu-open {
