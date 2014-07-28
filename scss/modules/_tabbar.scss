@@ -1,4 +1,4 @@
-.tabbar-container {
+.phs-tabbar-container {
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -9,23 +9,23 @@
     border-top:1px solid lightgray;
 }
 
-.tabbar-container ul{
+.phs-tabbar-container ul{
     text-align: center;
     list-style-type: none;
 }
 
-.tabbar-container ul li {
+.phs-tabbar-container ul li {
     display: inline-block;
     min-width: 80px;
 }
 
-.tabbar-container ul li a{
+.phs-tabbar-container ul li a{
     display: block;
     padding: 4px;
     text-decoration: none;
     color:$tab-bar-menu-text-color;
 }
 
-.tabbar-container ul li span {
+.phs-tabbar-container ul li span {
     display: block;
 }

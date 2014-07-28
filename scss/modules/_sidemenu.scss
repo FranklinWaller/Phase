@@ -1,4 +1,4 @@
-.sidemenu {
+.phs-sidemenu {
     margin: 0;
     padding: 0;
     width: 25%;
@@ -10,7 +10,7 @@
     overflow: auto;
 }
 
-.sidemenu .title {
+.phs-sidemenu .phs-title {
     text-align: center;
     display: block;
     margin-bottom: 10px;
@@ -22,39 +22,39 @@
 
 
 
-.sidemenu .sub-title {
+.phs-sidemenu .phs-sub-title {
     padding:10px;
     border:none;
     text-transform: uppercase;
     font-size: 11px;
 }
 
-.sidemenu ul{
+.phs-sidemenu ul{
     color: $side-menu-text-color;
     list-style-type: none;
 }
 
-.sidemenu ul li {
+.phs-sidemenu ul li {
     background-color: $side-menu-item-background-color;
     border-top: 1px solid $side-menu-item-divider-color;
 }
 
-.sidemenu ul li a {
+.phs-sidemenu ul li a {
     width: 92%;
     display: block;
     padding:10px;
     text-decoration: none;
 }
 
-.sidemenu ul li a:hover{
+.phs-sidemenu ul li a:hover{
     background-color: #F8F0F0;
 }
 
-.sidemenu ul li img {
+.phs-sidemenu ul li img {
     vertical-align: middle;
 }
 
-.sidemenu-open {
+.phs-sidemenu-open {
     float:left;
     margin: 10px 10px 0px 10px;
     display:none;
@@ -62,7 +62,7 @@
 
 /* Side menu content */
 
-.side-content {
+.phs-side-content {
     width: 72%;
     float:left;
     overflow:auto;
@@ -70,20 +70,20 @@
     margin: 0% 1%;
 }
 
-.side-content .title {
+.phs-side-content .phs-title {
     padding-bottom: 5px;
     font-weight: 200;
     border-bottom: 1px solid $general-color;
     margin: 16px 0px 15px 0px;
 }
 
-.side-content .title a{
+.phs-side-content .phs-title a{
     float:right;
     font-size: 20px;
     padding: 5px 25px;
 }
 
-.side-content form .sidemenu-open {
+.phs-side-content form .phs-sidemenu-open {
     margin: 0px 10px;
 }
 
@@ -99,17 +99,18 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .sidemenu {
+    .phs-sidemenu {
         display: none;
         position: absolute;
-        width: 50%;
+        width: 70%;
+        left: -75%;
     }
     
-    .side-content {
+    .phs-side-content {
         width: 97%;     
     }
     
-    .sidemenu-open {
+    .phs-sidemenu-open {
         display: block;
     }
 }

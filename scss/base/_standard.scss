@@ -6,4 +6,14 @@
 
 html, body {
     height: 100%;
+    overflow:hidden;
+}
+
+a {
+    text-decoration: none;
+    color:$general-text-color;
+}
+
+a:hover {
+    color:$general-text-color;
 }

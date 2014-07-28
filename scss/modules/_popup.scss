@@ -1,0 +1,53 @@
+.phs-popup {
+    width: 538px;
+    height:350px;
+    background-color:$popup-background-color;
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -175px;
+    margin-left: -269px;
+}
+
+.phs-popup .phs-popup-box {
+    background: $popup-background-popup-box-color;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+    color:white;
+
+}
+
+.phs-popup .phs-popup-box a {
+    color:white
+}
+
+.phs-popup .phs-popup-box .phs-left {
+    margin-left:10px;
+}
+
+.phs-popup .phs-popup-box .phs-right {
+    margin-right:10px;
+}
+
+.phs-left {
+    float:left;
+}
+
+.phs-right {
+    float:right;
+}
+
+@media only screen and (max-width: 542px) {
+    .phs-popup{
+        left:0;
+        top:0;
+        margin:0;
+        height: 100%;
+        width: 100%;
+    }
+}
+

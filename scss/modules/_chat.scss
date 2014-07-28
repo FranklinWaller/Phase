@@ -1,36 +1,36 @@
 /*
 	The chat bubble/comments
 */
-.comments {
+.phs-comments {
 	width:300px;
 }
 
-.comment.left img{
+.phs-comment.phs-left img{
 	float:left;
 
 }
 
-.comment.right img{
+.phs-comment.phs-right img{
 	float:right;
 	margin-right:-220px;
 }
 
-.comment img{
+.phs-comment img{
 	max-width:65px;
 	border-radius:50%;
 }
 
-.comments .comment {
+.phs-comments .phs-comment {
 	width:100%;
 	margin-bottom:20px;
 }
 
-.comments .comment p {
+.phs-comments .phs-comment p {
 	margin:10px 0 10px 0;
 }
 
 /* general button bubble */
-.bubble {
+.phs-bubble {
 	position:relative;
 	background:$my-bubble;
 	padding: 1px 20px 10px;
@@ -39,7 +39,7 @@
 	margin-left:90px;
 }
 
-.bubble:after{
+.phs-bubble:after{
 	content: '';
 	display:block;
 	position:absolute;
@@ -51,30 +51,30 @@
 	border-bottom:8px solid transparent;	
 }
 
-.bubble .title {
+.phs-bubble .phs-title {
 	border-bottom:1px solid #fff;
 	font-size:12px;
 	font-weight:400;
         padding-top: 10px;
 }
 
-.bubble .time {
+.phs-bubble .phs-time {
 	font-size:11px;
 }
 
 /* opposite bubble */
-.bubble.opposite {
+.phs-bubble.phs-opposite {
 	background:$opposite-bubble;
 }
 
-.bubble.opposite:after {
+.phs-bubble.phs-opposite:after {
 	top:15px;
 	right:-15px;
 	border-left:15px solid $opposite-bubble;
 }
 
 /* Your bubble */
-.bubble.me:after{
+.phs-bubble.phs-me:after{
 	left:-15px;
 	top:15px;
 	border-right:15px solid $my-bubble;
