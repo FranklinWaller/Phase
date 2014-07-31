@@ -1,19 +1,19 @@
 /* Card UI */
 
-.cards {
+.phs-cards {
     width: 800px;
     margin: 0 auto;
 }
 
-.cardwrapper{
+.phs-cardwrapper{
     width: 45%;
 }
 
-.cardwrapper.left{
+.phs-cardwrapper.left{
     float:left;
 }
 
-.cardwrapper.right{
+.phs-cardwrapper.right{
     
     float:left;
 }
@@ -23,7 +23,7 @@
 /*
     The actual cards themself
 */
-.card {
+.phs-card {
         margin: 10px;
 	box-shadow: 0px 0px 2px #252525; 
 	padding: 2.5%; 
@@ -32,13 +32,13 @@
         margin-bottom: 5%;
 }
 
-.card h2 {
+.phs-card h2 {
 	padding: 10px 10px 0px; 
 	font-weight: 300; 
 	margin-bottom: 20px;
 }
 
-.card p {
+.phs-card p {
     padding:0 0 0 10px;
 }
 
@@ -48,42 +48,42 @@
 */
 
 
-.card .list {
+.phs-card .phs-list {
     list-style-type: none;
     padding:10px;
     font-size: 13px;
 }
 
-.card .list li {
+.phs-card .phs-list li {
     border-top: 1px solid $general-color;
     color: $general-color;
     padding:10px 0 5px;
 }
 
-.card .list li .title {
+.phs-card .phs-list li .phs-title {
     font-weight: bold;
     font-size: 14px;
 }
 
-.card .list li p{
+.phs-card .phs-list li p{
     padding:0;
 }
 
-.card .list li img{
+.phs-card .phs-list li img{
     float:left;
     height: 100%;
 }
 
 /* Card additionals */
 
-.card .big-info {
+.phs-card .phs-big-info {
     display: block;
     text-align: center;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.card .small-info {
+.phs-card .phs-small-info {
     display: block;
     text-align: center;
     font-weight: 200;
@@ -103,8 +103,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .cards {width: 100%;}
-    .cardwrapper {width: 100%;}
+    .phs-cards {width: 100%;}
+    .phs-cardwrapper {width: 100%;}
 }
 
 @media only screen and (max-width: 480px) {
