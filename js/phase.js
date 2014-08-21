@@ -15,7 +15,6 @@ function phsHidePopup() {
 }
 
 function phsShowPopup() {
-
     var popupTop = "50%";
 
     if (window.matchMedia("(max-width: 542px)").matches) {
